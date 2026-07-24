@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Shell Travel | Туры онлайн</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+
+<!-- ШАПКА -->
+<header class="header">
+    <div class="header-flex">
+        <div class="logo">
+            <img src="../mediya/logo.svg" alt="Shell Travel" class="logo-img">
+        </div>
+        <div class="nav">
+    <a href="#">О нас</a>
+    <a href="#">Предложения</a>
+    <a href="#">Акции</a>
+    <a href="#">Контакты</a>
+</div>
+        <div class="header-right">
+            <img src="../mediya/social-icons.svg" alt="Соцсети" class="social-icons">
+            <img src="../mediya/user-icon.svg" alt="Профиль" class="user-icon">
+        </div>
+    </div>
+</header>
+
+<main class="main-container">
+<!-- БАННЕР НА ВСЮ ШИРИНУ -->
+<div class="banner">
+    <div class="search-window">
+        <div class="search-header">
+            <span class="search-title">Туры</span>
+            <div class="search-underline"></div>
+        </div>
+        
+        <div class="search-fields">
+            <!-- Откуда -->
+            <div class="input-wrapper input-from" id="from-wrapper">
+                <input type="text" placeholder="Откуда" id="from-input" readonly>
+                <img src="../mediya/icon-from.svg" alt="" class="input-icon">
+                <div class="dropdown" id="from-dropdown">
+                    <ul class="city-list">
+                        <li data-city="Москва">Москва</li>
+                        <li data-city="Санкт-Петербург">Санкт-Петербург</li>
+                        <li data-city="Уфа">Уфа</li>
+                        <li data-city="Казань">Казань</li>
+                        <li data-city="Новосибирск">Новосибирск</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Куда -->
+            <div class="input-wrapper input-to" id="to-wrapper">
+                <input type="text" placeholder="Куда" id="to-input" readonly>
+                <img src="../mediya/icon-to.svg" alt="" class="input-icon">
+                <div class="dropdown" id="to-dropdown">
+                    <ul class="country-list">
+                        <li data-country="Турция, Стамбул">Турция, Стамбул</li>
+                        <li data-country="Египет, Каир">Египет, Каир</li>
+                        <li data-country="ОАЭ, Дубай">ОАЭ, Дубай</li>
+                        <li data-country="Таиланд, Бангкок">Таиланд, Бангкок</li>
+                        <li data-country="Мальдивы, Мале">Мальдивы, Мале</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Дата вылета -->
+            <div class="input-wrapper input-date" id="date-wrapper">
+                <input type="text" placeholder="Дата вылета" id="date-input" readonly>
+                <img src="../mediya/icon-date.svg" alt="" class="input-icon">
+                <div class="dropdown" id="date-dropdown">
+                    <div class="calendar" id="calendar"></div>
+                </div>
+            </div>
+
+            <!-- Ночей -->
+            <div class="input-wrapper input-nights" id="nights-wrapper">
+                <input type="text" placeholder="Ночей" id="nights-input" readonly>
+                <img src="../mediya/icon-nights.svg" alt="" class="input-icon">
+                <div class="dropdown" id="nights-dropdown">
+                    <div class="nights-grid" id="nights-grid"></div>
+                </div>
+            </div>
+
+            <!-- Туристы -->
+            <div class="input-wrapper input-tourists" id="tourists-wrapper">
+                <input type="text" placeholder="Туристы" id="tourists-input" readonly value="Туристы">
+                <img src="../mediya/icon-tourists.svg" alt="" class="input-icon">
+                <div class="dropdown" id="tourists-dropdown">
+                    <div class="passenger-control">
+                        <span class="passenger-type">Взрослые</span>
+                        <div class="counter">
+                            <button id="adults-minus">-</button>
+                            <span id="adults-count">2</span>
+                            <button id="adults-plus">+</button>
+                        </div>
+                    </div>
+                    <div class="passenger-control">
+                        <span class="passenger-type">Дети</span>
+                        <div class="counter">
+                            <button id="children-minus">-</button>
+                            <span id="children-count">0</span>
+                            <button id="children-plus">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="search-button-custom" id="search-btn">
+                <img src="../mediya/icon-search.svg" alt="">
+                <span>Поиск</span>
+            </button>
+        </div>
+    </div>
+    
+    <button class="select-tour-btn">Выбрать тур</button>
+</div>
+
+    <!-- ЛУЧШИЕ ОТЕЛИ 2026 -->
+    <div class="hotels-section">
+        <div class="hotels-bg"></div>
+        <div class="container">
+            <h2 class="hotels-title">Лучшие отели 2026</h2>
+            <div class="hotels-content">
+                <div class="hotels-cards">
+                    <div class="hotel-card">
+                        <img src="../mediya/hotel1.jpg" alt="SECRETS AKUMAL" class="hotel-card-img">
+                        <div class="hotel-card-header">
+                            <h3>SECRETS AKUMAL RIVIERA MAYA</h3>
+                            <p>Мексика, Тулум</p>
+                        </div>
+                        <div class="hotel-card-footer">
+                            <span class="hotel-desc">Насладитесь великолепным сервисом в SECRETS AKUMAL RIVIERA MAYA</span>
+                            <button class="hotel-btn">КУПИТЬ ТУР</button>
+                        </div>
+                    </div>
+                    
+                    <div class="hotel-card">
+                        <img src="../mediya/hotel2.jpg" alt="GRANDVRIO OCEAN RESORT" class="hotel-card-img">
+                        <div class="hotel-card-header">
+                            <h3>GRANDVRIO OCEAN RESORT</h3>
+                            <p>Вьетнам, Дананг</p>
+                        </div>
+                        <div class="hotel-card-footer">
+                            <span class="hotel-desc">Со вкусом оформленные номера - High Class типа «все включено»</span>
+                            <button class="hotel-btn">КУПИТЬ ТУР</button>
+                        </div>
+                    </div>
+                    
+                    <div class="hotel-card">
+                        <img src="../mediya/hotel3.jpg" alt="GOKULAM GRAND TURTLE" class="hotel-card-img">
+                        <div class="hotel-card-header">
+                            <h3>GOKULAM GRAND TURTLE</h3>
+                            <p>Индия, Керала</p>
+                        </div>
+                        <div class="hotel-card-footer">
+                            <span class="hotel-desc">Уютный отель, который входит в самый большой комплекс в Керала.</span>
+                            <button class="hotel-btn">КУПИТЬ ТУР</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ИНФОРМАЦИЯ О КОМПАНИИ -->
+    <div class="container" id="about">
+        <div class="info-section">
+            <div class="info-block">
+                <h3 class="info-title">Турагентство Shell Travel</h3>
+                <p class="info-text">
+                    <span class="info-bold">Турагентство Шелл Тревел (Shell Travel)</span> предлагает туры по системе All inclusive 5*, ULTRA. Воспользуйтесь нашим онлайн-сервисом для самостоятельного бронирования тура. Бронируйте и оплачивайте прямо на сайте в два клика!
+                </p>
+            </div>
+
+            <div class="info-block">
+                <h3 class="info-title">Банк горящих туров</h3>
+                <p class="info-text">
+                    <span class="info-bold">Выгодные туры</span> — на официальном сайте турагентства Shell Travel! Выбирайте туры и бронируйте онлайн, без посещения офиса.
+                </p>
+                <p class="info-text">
+                    Горящие туры турагентства Шелл Тревел — это путевки с приближающейся датой выезда, которые не были приобретены или предложение в невысокий сезон. Например, путевку на тропический курорт предлагают в сезон дождей, а на горнолыжный — на весенние даты. Цена снижается примерно за 10 дней до вылета.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ВИЗУАЛЬНАЯ ИЗЮМИНКА -->
+    <div class="decor-section">
+        <div class="decor-line line-top"></div>
+        <div class="decor-images">
+            <img src="../mediya/decor1.jpg" alt="" class="decor-img">
+            <img src="../mediya/decor2.jpg" alt="" class="decor-img">
+            <img src="../mediya/decor3.jpg" alt="" class="decor-img">
+            <img src="../mediya/decor4.jpg" alt="" class="decor-img">
+        </div>
+        <div class="decor-line line-bottom"></div>
+    </div>
+
+    <!-- АЛГОРИТМ БЫСТРОГО БРОНИРОВАНИЯ -->
+    <div class="algorithm-section">
+        <h2 class="algorithm-title">Алгоритм быстрого бронирования</h2>
+        <div class="algorithm-steps">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3 class="step-title">Параметры поиска</h3>
+                <p class="step-desc">Задайте направление, сроки и состав <br> туристов</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3 class="step-title">Выбор варианта</h3>
+                <p class="step-desc">Изучите отели и выберите идеальный <br> вариант</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3 class="step-title">Регистрация</h3>
+                <p class="step-desc">Введите данные и получите <br> подтверждение</p>
+            </div>
+        </div>
+        <div class="algorithm-line"></div>
+    </div>
+
+    <!-- ВНУТРЕННИЙ ТУРИЗМ -->
+    <div class="container" id="offers">
+        <div class="domestic-section">
+            <h2 class="domestic-title">Внутренний туризм — это тренд</h2>
+            <div class="domestic-grid">
+                <div class="domestic-card card-large">
+                    <img src="../mediya/domestic1.jpg" alt="Новогодние туры" class="domestic-img">
+                    <div class="domestic-content">
+                        <h3 class="domestic-heading dark">Новогодние туры в Великий Устюг</h3>
+                        <button class="domestic-btn">Узнать больше</button>
+                    </div>
+                </div>
+                
+                <div class="domestic-right">
+                    <div class="domestic-card card-wide">
+                        <img src="../mediya/domestic2.jpg" alt="Популярные направления" class="domestic-img">
+                        <div class="domestic-content">
+                            <h3 class="domestic-heading white">Популярные направления<br>для отдыха в России</h3>
+                            <button class="domestic-btn">Узнать больше</button>
+                        </div>
+                    </div>
+                    
+                    <div class="domestic-row">
+                        <div class="domestic-card card-medium">
+                            <img src="../mediya/domestic3.jpg" alt="Премиум-отели" class="domestic-img">
+                            <div class="domestic-content">
+                                <h3 class="domestic-heading white">Премиум-отели<br>России</h3>
+                                <p class="domestic-subtext white">Для тех, кто выбирает комфорт</p>
+                                <button class="domestic-btn">Узнать больше</button>
+                            </div>
+                        </div>
+                        
+                        <div class="domestic-card card-medium">
+                            <img src="../mediya/domestic4.jpg" alt="Экскурсионные туры" class="domestic-img">
+                            <div class="domestic-content">
+                                <h3 class="domestic-heading white">Экскурсионные<br>туры по России</h3>
+                                <p class="domestic-subtext white">Впечатления, которые<br>останутся с вами навсегда</p>
+                                <button class="domestic-btn">Узнать больше</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- КАТАЛОГ БАННЕР -->
+    <div class="catalog-banner">
+        <div class="catalog-content">
+            <h2 class="catalog-banner-title">Найдите свое идеальное<br>путешествие в нашем каталоге</h2>
+            <button class="catalog-banner-btn">Перейти</button>
+        </div>
+    </div>
+
+    <!-- ПОДПИСКА -->
+    <div class="subscribe-banner" id="promotions">
+        <div class="subscribe-content">
+            <h3 class="subscribe-title">Подпишитесь на наши рассылки</h3>
+            <p class="subscribe-subtitle">Получайте лучшие и самые выгодные предложения!</p>
+            <div class="subscribe-form">
+                <input type="email" placeholder="Напишите свою почту" class="subscribe-input">
+                <button class="subscribe-btn">
+                    <img src="../mediya/arrow-icon.svg" alt="→">
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- ПОДВАЛ -->
+<footer class="footer" id="contacts">
+    <img src="../mediya/footer-bg.gif" alt="Фон" class="footer-bg">
+    <div class="footer-overlay"></div>
+    <div class="footer-content">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="../mediya/logo.svg" alt="Shell Travel" class="footer-logo">
+                </div>
+                <div class="footer-nav">
+                    <h4>Управление</h4>
+                    <ul>
+                        <li><a href="#" data-link="about">О нас</a></li>
+                        <li><a href="#" data-link="offers">Предложения</a></li>
+                        <li><a href="#" data-link="promotions">Акции</a></li>
+                        <li><a href="#" data-link="contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-hot">
+                    <h4>Банк горящих туров</h4>
+                    <p>Выгодные туры — на официальном сайте. Бронируйте онлайн, без посещения офиса.</p>
+                </div>
+                <div class="footer-contacts">
+                    <h4>Свяжитесь с нами</h4>
+                    <p>8 (961) 370 39 50</p>
+                    <p>ahlelele@ahlelas.com</p>
+                    <p>Чернышевского, 1412 филиала <br> Кировский район, Уфа, 450078</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#"><img src="../mediya/social-icons.svg" alt="Соцсети"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../JS/slider.js"></script>
+<script src="../JS/script.js"></script>
+<script src="../JS/auth.js"></script>
+</body>
+</html>
