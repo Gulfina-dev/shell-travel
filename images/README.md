@@ -1,22 +1,22 @@
-# Сайт туристического агентства
+# SHELL travel
 
-## Описание
-Это учебный проект, созданный в рамках обучения по специальности "Информационные системы и технологии". Сайт представляет собой лендинг для туристического агентства с галереей направлений и формой бронирования.
+## Description
+A landing page for a travel agency, created as a study project. The site features a tour catalog, booking form, and responsive design.
 
-## Используемые технологии
+## Technologies used
 - HTML5
 - CSS3 (Flexbox, Grid)
-- JavaScript (чистый, без библиотек)
+- JavaScript (pure)
 
-## Функциональность
-- Адаптивный дизайн (открывается на телефонах и компьютерах)
-- Слайдер с популярными турами
-- Форма заявки с проверкой введённых данных
-- Сохранение выбранных туров в браузере (LocalStorage)
+## Features
+- Adaptive layout (mobile-friendly)
+- Tour slider
+- Booking form with validation
+- LocalStorage for selected tours
 
-## Планы по доработке
-- Добавить бэкенд на Node.js
-- Подключить базу данных для хранения заявок
+## Plans for improvement
+- Add backend on Node.js
+- Connect a database for storing requests
 
-## Скриншоты
-![Главный экран](images/screenshot.png)
+## Screenshot
+![Main page](images/screenshot.png)
