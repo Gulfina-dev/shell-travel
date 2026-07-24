@@ -1,27 +1,27 @@
 // Слайдер баннера
 const slides = [
     {
-        image: '../mediya/banner-bg.jpg',
+        image: '../images/banner-bg.jpg',
         btnColor: '#0A505B',
         btnTextColor: 'white'
     },
     {
-        image: '../mediya/banner-bg-2.jpg',
+        image: '../images/banner-bg-2.jpg',
         btnColor: '#FEE6B0',
         btnTextColor: '#2F5177'
     },
     {
-        image: '../mediya/banner-bg-3.jpg',
+        image: '../images/banner-bg-3.jpg',
         btnColor: '#EBA867',
         btnTextColor: 'white'
     },
     {
-        image: '../mediya/banner-bg-4.jpg',
+        image: '../images/banner-bg-4.jpg',
         btnColor: '#CF7C74',
         btnTextColor: 'white'
     },
     {
-        image: '../mediya/banner-bg-5.jpg',
+        image: '../images/banner-bg-5.jpg',
         btnColor: '#1FC3A1',
         btnTextColor: 'white'
     }
