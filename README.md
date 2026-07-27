@@ -46,6 +46,7 @@ The site includes demo functionality: most buttons lead to a temporary page, and
 - Promotional slogan
 - Contact information
 - Logo linking to "About" section
+- **Animated beach GIF as background** — adds a dynamic, summery vibe
 
 ## Future Improvements
 - Connect booking forms to a backend (Node.js)
