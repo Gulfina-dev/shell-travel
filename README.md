@@ -19,4 +19,4 @@ A one-page travel agency website with a booking form and a gallery of destinatio
 - Connect a database to store bookings
 
 ## Screenshot
-![Main page](images/screenshot.png)
+![Main page](images/screenshot2.png)
